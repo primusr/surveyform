@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form version 2</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title" class="text-center"><b>K-Pop a panget Fan Insights Survey</b></h1>
+            <p id="description" class="description text-center">Dive into the captivating world of K-Pop with this exclusive K-Pop Fan Insights Survey!
+                Are you a passionate K-Pop enthusiast or just starting to explore this global phenomenon?
+                I would love to hear from you. Share your thoughts, preferences, and experiences as a K-Pop fan.
+            </p>
+        </header>
+
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Enter your Name" autocomplete="name" required/>
+            </div>
+            
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Enter your Email Address" autocomplete="email" required/>
+            </div>
+            
+            <div class="form-group">
+                <label for="number" id="number-label">Age</label>
+                <input type="number" id="number" name="age" class="form-control" placeholder="How old are you?" min="10" max="99"/>
+            </div>
+
+            <div class="form-group">
+                <p>What is your gender?</p>
+                <label>
+                <input type="radio" name="gender" value="female" class="input-radio" checked>
+                    Female
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="male" class="input-radio">
+                    Male
+                </label>    
+            </div>
+
+            <div class="form-group">
+                <p>What is your occupation?</p>
+                <select id="dropdown" name="occupation" class="form-control" required>
+                    <option disabled="" selected="" value="">Select current occupation</option>
+                    <option value="student">Student</option>
+                    <option value="employed">Employee</option>
+                    <option value="unemployed">Unemployed</option>
+                    <option value="retired">Retired</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>How did you first discover K-Pop?</p>
+                <select id="discovery" name="first-discovered" class="form-control" required>
+                    <option disabled="" selected="" value="">Select the way you first came across K-Pop</option>
+                    <option value="friend">Through a friend</option>
+                    <option value="family">Recommendation from a family member</option>
+                    <option value="social-media">Social Media Platforms</option>
+                    <option value="radio-tv">Radio or TV</option>
+                    <option value="random">Random encounter</option>
+                    <option value="other">Others</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>How often do you listen to K-Pop music?</p>
+                <label>
+                    <input type="radio" name="listen-rate" value="always" class="input-radio" checked>
+                    Always
+                </label>
+                <label>
+                    <input type="radio" name="listen-rate" value="seldom" class="input-radio">
+                    Seldom
+                </label>
+                <label>
+                    <input type="radio" name="listen-rate" value="never" class="input-radio">
+                    Never
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>Have you attended any K-Pop concerts or fan meetings? </p>
+                <label>
+                    <input type="radio" name="attendance" value="yes" class="input-radio" checked>
+                    Yes
+                </label>
+                <label>
+                    <input type="radio" name="attendance" value="no" class="input-radio">
+                    No
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>Which aspects of K-Pop do you find most appealing?
+                    <span class="clue">(Check all that apply)</span>
+                </p>
+                <label>
+                    <input type="checkbox" name="prefer" value="catchy-music" class="input-checkbox"/>
+                    Catchy Music
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" value="engaging-choreography" class="input-checkbox"/>
+                    Engaging Choreography
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" value="visually-stunning-music-videos" class="input-checkbox">
+                    Visually Stunning Music Videos
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" value="unique-fashion-and-styling" class="input-checkbox">
+                    Unique Fashion and Styling
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" value="strong-fandom-community"  class="input-checkbox">
+                    Strong Fandom/Community
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>
+                    What is something within K-Pop that you wish to see different or improved?
+                    <span class="clue">(Check all that apply)</span>
+                </p>
+    
+                <label>
+                    <input type="checkbox" name="prefer" value="more-diversity-&-inclusion" class="input-checkbox">
+                    More diversity & inclusion
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" value="more-idol-interactions" class="input-checkbox">
+                    More idol interactions
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" value="beauty-standards" class="input-checkbox">
+                    Idols' Beauty Standards
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" value="artistic-freedom" class="input-checkbox">
+                    Artistic Freedom
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" value="fandom-behavior" class="input-checkbox">
+                    Fandom Behavior
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" value="global-collaborations" class="input-checkbox">
+                    Global Collaborations
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" value="education-&-training" class="input-checkbox">
+                    Education & Training
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" value="fair-treatment" class="input-checkbox">
+                    Fair Treatment
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" value="mental-health-support" class="input-checkbox">
+                    Mental Health Support
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" value="government-support" class="input-checkbox">
+                    Government Support
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>Is there anything else you'd like to share about your K-Pop fandom experience?</p>
+                <textarea id="experience" class="input-textarea" name="experience" placeholder="Enter your fandom experience here..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
